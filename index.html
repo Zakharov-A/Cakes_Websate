@@ -10,7 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- iconicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -27,17 +32,23 @@
                     <li class="menu-item">
                         <a class="menu-link" href="#">Other sweets</a>
                     </li>
-                    <li class="menu">
-                        <a class="menu-link" href="#">Contacts</a>
-                    </li>
                     <!-- /.menu-item -->
                 </ul>
 
-                <a class="logo">
-                    <img class="logo-img" src="static/img/logo.png" alt="logo site">
-                </a>
+                <nav>
+                    <a class="logo">
+                        <img class="logo-img" src="static/img/cake2.svg" alt="logo site">
+                    </a>
+                </nav>
 
-                <a href="tel:3805045655656" class="phone">+38 050-456-56-56</a>
+                <nav class="contact-menu-top">
+                    <a class="contacts-link" href="#">Contacts</a>
+                </nav>
+
+                <nav>
+                    <a href="#" class="social_network"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="social_network"><ion-icon name="logo-instagram"></ion-icon></a>
+                </nav>
             </nav>
             <!-- /.nav -->
         </div>
@@ -49,10 +60,76 @@
         <section class="headline">
             <div class="container">
                 <h1 class="title">The best sweets for you</h1>
-                <img class="headline-img" src="static/img/logo2.jpg" alt="The best sweets for you">
+                <img class="headline-img" src="static/img/logo5.png" alt="The best sweets for you">
+                <div>
+                    <a class="headline-btn" href="#">Make an order</a>
+                </div>
             </div>
         </section>
         <!-- /.headline -->
+        <section class="new">
+            <div class="container">
+                <h2 class="new-title">What's new</h2>
+                <div class="new-info">
+                    <div class="new-text">
+                        <h2 class="title-text">С чего начать украшение торта</h2>
+                        <p>Что нужно для того, чтобы украсить свежеиспеченный торт оригинально, нестандартно и со
+                            вкусом? Всего несколько ингредиентов: фантазия, терпение, немного свежих продуктов и
+                            специальные помощники кондитера. Новичкам в деле оформления выпечки необходимо
+                            потренироваться, набить руку, поэтому не беритесь сразу за сложные декоративные элементы и
+                            украшение многоярусных тортов.</p>
+                        <h2 class="title-text">Несколько секретов</h2>
+                        <p>Не стремитесь использовать сразу все украшения, которые есть в наличии. Соблюдайте
+                            умеренность: если используете мастичные фигурки, то розы из крема будут лишними. То же самое
+                            касается и цветов. В одном изделии достаточно 2–3 цветов. Остальные пищевые красители
+                            сможете использовать в следующий раз. Концентрация красителя в креме или мастике, марципане
+                            также должна вами контролироваться. Слишком большое количество краски сделает украшение
+                            неестественным и слишком ярким и неаппетитным.</p>
+                        <p>Не повторяйте то, что видели у кого-то на празднике или в кондитерской. Добавляйте новые
+                            элементы, используйте свежие техники.</p>
+                        <p>Учитывайте повод и тематику застолья. Торт для свадьбы существенно отличается от изделия,
+                            выпеченного по поводу мальчишника перед ней.</p>
+                        <p>Не используйте заменители сливочного масла, сахар вместо пудры. Точно соблюдайте дозировку,
+                            иначе декор может испортиться в самый неподходящий момент, когда переделывать его будет уже
+                            поздно.</p>
+                        <b>Приобретите специальные приспособления: кондитерский шприц, мешок и насадки, силиконовые
+                            коврики, венчики, подставку для торта и прочие нужные мелочи. Они ускорят процесс оформления
+                            и сделают его нетрудоемким.</b>
+                    </div>
+                    <img class="images-new" src="static/img/55.jpeg" alt="cake">
+                </div>
+                <!-- /.news-info -->
+            </div>
+        </section>
+        <!-- /.news -->
+        <section class="sweets">
+            <div class="container">
+                <h2 class="sweets-title">Whatever your fantasy</h2>
+                <ul class="sweets-list">
+                    <li class="sweets-item">
+                        <img src="static/img/sweet1.jpeg" alt="sweet">
+                        <h3>Delicate dessert</h3>
+                        <p>Rich and light</p>
+                    </li>
+                    <li class="sweets-item">
+                        <img src="static/img/sweet2.jpeg" alt="sweet">
+                        <h3>Stylish</h3>
+                        <p>Thematic design</p>
+                    </li>
+                    <li class="sweets-item">
+                        <img src="static/img/sweet3.jpeg" alt="sweet">
+                        <h3>Summer</h3>
+                        <p>Fruits and flowers</p>
+                    </li>
+                    <li class="sweets-item">
+                        <img src="static/img/sweet4.jpeg" alt="sweet">
+                        <h3>Berry paradise</h3>
+                        <p>Exquisite and rich taste</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /.different-sweets -->
     </main>
     <!-- /.main -->
 </body>
