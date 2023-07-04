@@ -176,8 +176,8 @@ ul{
 
 .sweets-item img{
     margin-bottom: 20px;
-    margin-right: 40px;
-    width: 300px;
+    margin-right: 20px;
+    width: 200px;
 }
 
 .sweets-item:first-child{
@@ -218,7 +218,7 @@ ul{
     text-transform: uppercase;
     font-size: 32px;
     line-height: 39px;
-    text-align: left;
+    text-align: center;
 }
 
 .contacts-input{
@@ -309,6 +309,41 @@ ul{
 
 }
 
+@media (max-width: 1200px){
+        .contacts-inner{
+            display: block;
+        }
+        .contacts-form{
+            width: auto;
+        }
+        .contact-title{
+            text-align: center;
+        }
+        .contacts-img{
+            width: 100%;
+        }
+        .contacts{
+            background-color: #574863;
+        }
+}
+
+@media (max-width: 1100px){
+    .sweets-list{
+        flex-wrap: wrap;
+
+        /* display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap; */
+    }
+    .sweets-item{
+        /* width: 250px; */
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+}
+
 @media (max-width: 940px){
     .images-new{
         width: 400px;
@@ -318,9 +353,17 @@ ul{
     font-size: 26px;
     line-height: 28px;
     font-weight: 500;
+    }
+    new-text p,
+    new-text b{
+    width: 100%;
+    }
 }
 
 @media (max-width: 800px){
+    .new-text{
+        align-items: center;
+    }
     .title{
         font-weight: 500;
         font-size: 34px;
@@ -333,16 +376,14 @@ ul{
         padding: 18px 80px 12px;
     }
     .images-new{
-        width: 300px;
-        margin-left: 80px;
+        display: none;
     }
     .new h2{
         font-size: 18px;
     }
-    .new-text p{
-        max-width: 400px;
-        margin: 0 0 20px;
-        font-size: 12px;
+    new-text p,
+    new-text b{
+    width: 100%;
     }
     
     .new-text b{
@@ -351,7 +392,19 @@ ul{
         line-height: 20px;
         font-size: 12px;
     }
- 
+}
+
+@media (max-width: 768px){
+    .headline,
+    .new{
+        padding: 20px 0;
+    }
+    .sweets{
+        padding-bottom: 50px;
+    }
+    .contacts-form{
+        padding: 50px 70px;
+    }
 }
 
 @media (max-width: 560px){
@@ -360,6 +413,12 @@ ul{
         font-size: 24px;
         line-height: 43px;
     }
+    .new-title,
+    .contact-title{
+      font-size: 28px;
+      line-height: 32px;  
+    }
+
     .headline-btn{
         font-weight: 300;
         font-size: 11px;
@@ -372,7 +431,22 @@ ul{
     .new h2{
         font-size: 14px;
     }
-   
+    .sweets-item,
+    .sweets-item img{
+        width: 100%;
+    }
+    .images-new{
+        width: 150px;
+        margin-left: 20px;
+    }
+    .contacts-form{
+        padding: 50px 15px;
+    }
+}
+@media (max-width: 375px){
+    .contacts-form{
+        padding: 50px 10px;
+    }
 }
 
 @media (max-width: 320px){
@@ -389,8 +463,9 @@ ul{
     }
     .images-new{
         width: 150px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
+   
 
 }
 
