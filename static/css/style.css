@@ -316,9 +316,9 @@ ul{
     .contacts-img{
         width: 100%;
     }
-        .contacts{
-            background-color: #574863;
-        }
+    .contacts{
+        background-color: #574863;
+    }
     .footer-inner .footer-link{
         padding-left: 20px;
     }
@@ -358,6 +358,7 @@ ul{
         width: 100%;
         background-color: #fff;
         height: 2px;
+        transition: .3s ease;
     }
     .btn-line:nth-child(1){
         top: 0;
@@ -371,6 +372,19 @@ ul{
     .btn-line:nth-child(4){
         top: 40px;
     }
+    .menu-open .btn-line:nth-child(1){
+        transform: scaleX(0);
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scale(0);
+    }
+
     /* .contact-menu-top{
         text-align: center;
     } */
