@@ -42,6 +42,7 @@ ul{
 
 .menu{  
     display: flex;
+    padding-left: 20px;
 }
 
 .menu-item{
@@ -266,6 +267,7 @@ ul{
 .footer-inner .footer-link{
     padding-left: 20px;
     font-size: 24px;
+    white-space: nowrap;
 }
 
 .social_network{
@@ -339,6 +341,9 @@ ul{
         width: 50%;
         margin-bottom: 30px;
     }
+    .menu-item{
+        margin-right: 40px;
+    }
 }
 
 @media (max-width: 940px){
@@ -351,7 +356,15 @@ ul{
         border: none;
         cursor: pointer;
         position: relative;
+        z-index: 50;
     }
+    .logo,
+    .contacts-link,
+    .social_network{
+        position: relative;
+        z-index: 50;
+    }
+
     .btn-line{
         position: absolute;
         left: 0;
@@ -389,7 +402,25 @@ ul{
         text-align: center;
     } */
     .menu{
-        display: none;
+       position: absolute;
+       left: 0;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       background-color: #0a0a0a;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       transform: translateY(-100%);
+       transition: .3s ease;
+    }
+    .menu-open .menu{
+        transform: translateY(0%);
+    }
+    .menu-item{
+        padding: 50px 0;
+        font-size: 56px;
     }
     .images-new{
         width: 400px;
@@ -400,8 +431,8 @@ ul{
     line-height: 28px;
     font-weight: 500;
     }
-    new-text p,
-    new-text b{
+    .new-text p,
+    .new-text b{
     width: 100%;
     }
 }
@@ -420,13 +451,7 @@ ul{
         font-size: 18px;
         line-height: 20px;
         padding: 18px 80px 12px;
-    }
-    .images-new{
-        display: none;
-    }
-    .new h2{
-        font-size: 18px;
-    }
+    }.menu-item
     .new-text p,
     .new-text b{
     width: 100%; 
@@ -444,17 +469,17 @@ ul{
     .headline,
     .new{
         padding: 20px 0;
-    }
+    }.menu-item
     .sweets{
         padding-bottom: 50px;
-    }menu-item
+    }
 }
 
 @media (max-width: 710px){
     .footer-inner .logo-img{
         margin: 15px 0;
         padding-right: 15px;
-        width: 40px;
+        width: 50px;
     }
     .footer-inner .contacts-form{
         padding: 50px 70px;
@@ -462,13 +487,18 @@ ul{
     }
     .footer-inner .contacts-link-footer{
         padding-right: 20px;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 10px;
         font-weight: 600px;
     }
     .footer-inner .social_network{
         font-size: 40px;
         margin-right: 10px;
+    }
+    .footer-inner .footer-link{
+        padding-left: 10px;
+        padding-right: 0;
+        font-size: 18px;
     }
 }
 
@@ -487,12 +517,12 @@ ul{
     .contact-title{
       font-size: 28px;
       line-height: 32px;  
-    }
+    }contacts-link
     .headline-btn{
         font-weight: 300;
         display: none;
     }
-    .new h2{
+    .new{
         font-size: 14px;
     }
     .sweets-item,
@@ -507,6 +537,25 @@ ul{
         padding: 50px 15px;
     }
 }
+
+@media (max-width: 460px){
+    .social_network{
+        font-size: 40px;
+    }
+    .logo-img{
+        width: 50px;
+    }
+    .contacts-link{
+        font-size: 18px;
+        padding: 0;
+    }
+    .menu-btn{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
 @media (max-width: 375px){
     .footer-inner .logo-img{
         margin: 15px 0;
@@ -515,6 +564,26 @@ ul{
     }
     .contacts-form{
         padding: 50px 10px;
+    }
+    .footer-inner .footer-link{
+        font-size: 18px;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 390px){
+    .nav{
+        flex-wrap: wrap;
+    }
+    .contact-menu-top .contacts-link{
+        flex-basis: auto;
+        margin-top: 50px;
+        order: 3;
+        width: 100%;
+    }
+    .footer-inner .footer-link{
+        padding-left: 0;
     }
 }
 
